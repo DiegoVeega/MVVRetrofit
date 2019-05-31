@@ -29,7 +29,7 @@ class GitHubRepoViewModel(private val app: Application) : AndroidViewModel(app) 
     private suspend fun nuke()= repository.nuke()
 
 
-    /*fun retriveRepos(user:String)= viewModelScope.launch{
+    fun retriveRepos(user:String)= viewModelScope.launch{
         this@GitHubRepoViewModel.nuke()
 
         val response = repository.retriveReposAsync(user).await()
@@ -45,6 +45,6 @@ class GitHubRepoViewModel(private val app: Application) : AndroidViewModel(app) 
                 }
             }
         }
-    }*/
+    }
 
 }
